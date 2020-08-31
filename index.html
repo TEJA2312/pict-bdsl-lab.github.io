@@ -1,269 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
-    <title>BDSL</title>
+    <meta name="description" content="Fashi Template">
+    <meta name="keywords" content="Fashi, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fashi | Template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Coda Caption:800' rel='stylesheet'>
-    <style>
-        .w3-button:hover{
-            background-color: #1c7430;
-        }
-        .context-dark, .bg-gray-dark, .bg-primary {
-            color: rgba(255, 255, 255, 0.8);
-        }
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/themify-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style type="text/css">
+    #content-desktop {display: block;}
+    #content-mobile {display: none;}
 
-        .footer-classic a, .footer-classic a:focus, .footer-classic a:active {
-            color: black;
-        }
-        .nav-list li {
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
+    @media screen and (max-width: 768px) {
 
-        .nav-list li a:hover:before {
-            margin-left: 0;
-            opacity: 1;
-            visibility: visible;
-        }
+        #content-desktop {display: none;}
+        #content-mobile {display: block;}
 
-        ul, ol {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .social-inner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            padding: 23px;
-            font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.5);
-        }
-        .social-container .col {
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .nav-list li a:before {
-            content: "\f14f";
-            font: 400 21px/1 "Material Design Icons";
-            color: #4d6de6;
-            display: inline-block;
-            vertical-align: baseline;
-            margin-left: -28px;
-            margin-right: 7px;
-            opacity: 0;
-            visibility: hidden;
-            transition: .22s ease;
-        }
-    </style>
+    }</style>
 </head>
-<body style="background-color: #F0F3F4;">
-<!-- Image and text -->
-<!--<nav class="navbar  navbar-light" style="background-color: white;">-->
-<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--        <span class="navbar-toggler-icon"></span>-->
-<!--    </button>-->
-<!--    <a  class="navbar-brand" href="#">Blockchain and Distributed Security Systems Lab</a>-->
 
-<!--<span style="margin-right: 50px;">-->
-<!--<a style="text-decoration: none;" href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-cubes"></i> About Lab</a>-->
-<!--  <a style="text-decoration: none;" href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-gavel"></i> Projects</a>-->
-<!--  <a style="text-decoration: none;" href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-group"></i> Activities</a>-->
-<!--  <a style="text-decoration: none;" href="#" class="w3-bar-item w3-button w3-hover-teal"><i class="fa fa-user"></i> Members</a>-->
-<!--</span>-->
-
-<!--</nav>-->
-<nav style="background-color: white;"  class="navbar sticky-top navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light" id="ftco-navbar">
-    <div class="container-fluid">
-        <a class="navbar-brand "  href=""><b>Blockchain and Distributed Security Systems Lab.</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <div style="margin-left: 120px;" class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav" >
-                <li class="nav-item active"><a href="#" class="nav-link  w3-hover-teal"><i class="fa fa-home"></i> Home</a></li>
-
-                <li class="nav-item active"><a href="#project" class="nav-link  w3-hover-teal">  <i class="fa fa-gavel"></i> Projects</a></li>
-                <li class="nav-item active"><a href="#act" class="nav-link  w3-hover-teal"><i class="fa fa-group"></i> Activities</a></li>
-                <li class="nav-item active"><a href="#member" class="nav-link w3-hover-teal"><i class="fa fa-user"></i> Members</a></li>
-
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div style="margin-top: 20px;" class="container">
-    <div class="row">
-        <div class="col" class="jumbotron">
-
-    <h1 class="display-4">BDSL LAB</h1>
-            <p>Pune institute of Computer Technology</p>
-            <hr class="my-4">
-    <p class="lead">Blockchain and Distributed Systems Security Lab hosts many activities such as
-        projects, consultancy, webinars etc. The focus of the lab is to conduct the activities
-        related to distributed system, security and blockchain. Blockchain is emerging technology
-        and used widely in banking, healthcare and government sectors. </p>
-
-    <a class=" w3-teal btn" href="#more" role="button">Learn more</a>
-        </div>
-
-        <div class="col" class="jumbotron">
-            <img src="image1.jpg" style="margin-right: 10px;
-margin-top: 10px" width="500" height="400" >
-        </div>
-
-    </div>
-</div>
-<div id="more" style="margin-top: 30px;" class="container">
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-header w3-teal" style="color: white; text-align: center" >Aims and Objectives of BDSL</h5>
-        <br>
-        <ul class="list-group">
-
-            <li class="list-group-item">To create an environment and raise awareness among developers and society by
-                educating them in the Blockchain and Distributed system technology.</li>
-            <li class="list-group-item">To identify and explore the use cases of the blockchain technology</li>
-            <li class="list-group-item">To design and development of applications using blockchain technology</li>
-            <li class="list-group-item">To identify the research issues and gaps in blockchain infrastructure and providing the
-                solutions.</li>
-            <li class="list-group-item">To carry out industry sponsored projects</li>
-            <li class="list-group-item">To take consultancy projects, </li>
-            <li class="list-group-item">To carry product development activities, </li>
-            <li class="list-group-item">To conduct faculty development programs</li>
-            <li class="list-group-item">To give opportunity to students for internships,</li>
-            <li class="list-group-item">To collaborate with national and international partners</li>
-
-
-        </ul>
-    </div>
-</div>
-
-<br>
-    <h2 id="act" style="font-family: 'Coda Caption'; font-size: 25px;"> Activities Conducted </h2>
-    <br>
-    <div class="card-group">
-        <div class="card">
-            <img src="image4.png" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
-                <h5 class="card-title" style="color: #008080;">Seminar</h5>
-                <p class="card-text">Expert Talk on Blockchain by Mr Hideki Shoda of Chaintope, Japan and Anandsagar
-                    Shiralkar, CEO Vizitech,UG and Research scholars meeting with Mr Hideki Shoda of Chaintope, Japan and
-                    Anandsagar Shiralkar, CEO Vizitech </p>
-                <p class="card-text"><small class="text-muted">13th October, 2017</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image5.png" class="card-img-top" alt="..." height="250">
-            <div class="card-body">
-                <h5 class="card-title" style="color: #008080;">Expert Session</h5>
-                <p class="card-text"> Expert session on Blockchain technology conducted on 14 December, 2018 by Dr.
-                    Vidyasagar Potdar, Senior Research Fellow, Information security and Blockchain
-                    consultant, Curtin University, Perth, Australia</p>
-                <p class="card-text"><small class="text-muted">14 December 2018</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="imga.jpg" class="card-img-top" alt="..." height="250" >
-            <div class="card-body">
-                <h5 class="card-title" style="color: #008080;">Meeting with UG/phd Scholars</h5>
-                <p class="card-text">Meeting with UG, Ph.D. scholars with Dr. Vidyasagar Potdar, Senior Research
-                    Fellow, Information security and Blockchain consultant, Curtin University, Perth,
-                    Australia</p>
-                <p class="card-text"><small class="text-muted">2018</small></p>
-            </div>
-        </div>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
 
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="imgb.jpg" class="card-img" alt="..." height="300" width="300">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Internship Opportunities for students</h5>
-                    <p class="card-text">Internship activities: Conduction of test for internship opportunities and interview of
-                        students for selection </p>
-                    <p class="card-text"><small class="text-muted"> Every Year</small></p>
+    <!-- Header Section Begin -->
+    <header id="content-desktop" class="header-section">
+        <div class="header-top">
+            <div class="container">
+                <div class="ht-left">
+                    <div style="" class="mail-service">
+                        <b>Blockchain And Distributed System Lab [ BDSL ]</b>
+                    </div>
+                </div>
+                <div  class="ht-right">
+                    <a href="#" class="login-panel"><img src="PICT_logo.jpeg">  Pune Institute of Computer Technology</a>
+                </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
-    <br>
-    <h2 style="font-family: 'Coda Caption'; font-size: 25px;" >Facilities available in lab</h2>
+        <div class="nav-item">
+            <div class="container">
 
-    <br>
-    <table class="table table-bordered w3-teal">
+                <nav class="nav-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="./shop.html">About Us</a></li>
+                        <li><a href="#">Projects</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Ongoing Projects</a></li>
+                                <li><a href="#">Completed Projects</a></li>
+                                <li><a href="#">Projects by UG/PG Students</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Activities</a></li>
+                        <li><a href="./contact.html">Members</a></li>
+                        <li><a href="#">Others</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Patent unders BDSL </a></li>
+                                <li><a href="#">Professional tie ups </a></li>
+                                <li><a href="#">Consultancy </a></li>
+                                <li><a href="#">Facilities available in lab</a></li>
+                                <li><a href="#">Softwares Available in the lab</a></li>
+                                <li><a href="#">Awards and Achievements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Contact</a></li>
 
-        <thead>
-        <tr>
-            <th scope="col">Sr.no</th>
-            <th scope="col">Configuration</th>
-            <th scope="col">Quantity</th>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- As a link -->
 
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>COMPUTER SYSTEM DELL OPTIPLEX 3010
-                MT ,
-                INTEL CORE I3 3240 PROCESSOR, INTEL
-                H61 MBD,
-                4 GB DDR 3 RAM, 500 GB SATA HDD,
-                18.5" DELL LED MONITOR, DELL USB
-                Keyboard & OPTICAL MOUSE</td>
-            <td>23</td>
 
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>HP DESKTOP KL233PAE4500 DX2300 C2D, 2.2
-                GHZ Q963 MB, 1GB RAM,160 GB SATA HDD,
-                COMBO DRIVE, 19"TFT MONITOR, OPTICAL
-                MOUSE, KEYBOARD</td>
-            <td>02</td>
+    <!-- As a heading -->
+    <nav id="content-mobile" class="navbar navbar-light bg-light">
+        <span  class=" navbar-brand mb-0 h1">Blockchain And Distributed <br> System Lab</span>
+    </nav>
 
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Lenovo K6 Power Mobile Phone Handset</td>
-            <td>01</td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>LASER PRINTER EPSON EPL 6200L</td>
-            <td>01</td>
-        </tr>
-        <tr>
-            <th scope="row">5</th>
-            <td>CISCO Catalyst Switch 2950 Series</td>
-            <td>01</td>
-        </tr>
-        <tr>
-            <th scope="row">6</th>
-            <td>Dlink 8 Port Hub DE-809 TC Ethernet HUB</td>
-            <td>01</td>
-        </tr>
-        </tbody>
-    </table>
 <br>
-    <div class="card">
+
+    <!-- Deal Of The Week Section Begin-->
+    <div id="content-desktop"  class="card bg-dark text-white">
+        <img src="img/200.png" class="card-img" height="500">
+        <div style="margin-top: 80px" class="card-img-overlay">
+            <h2 class="card-title text-center">About Us </h2>
+            <h4 class="card-text text-center">Blockchain and Distributed Systems Security Lab hosts many activities such as
+                projects, consultancy, webinars etc. The focus of the lab is to conduct the activities
+                related to distributed system, security and blockchain. Blockchain is emerging technology
+                and used widely in banking, healthcare and government sectors.A blockchain, originally block chain, is a growing list of records, called blocks, that are linked using cryptography. ... By design, a blockchain is resistant to modification of the data. It is "an open, distributed ledger that can record transactions
+                between two parties efficiently and in a verifiable and permanent way"</h4>
+
+        </div>
+    </div>
+    <div id="content-mobile" class="card bg-dark text-white">
+        <img src="img/200.png" class="card-img" height="500">
+        <div style="margin-top: 30px" class="card-img-overlay">
+            <h2 class="card-title text-center">About Us </h2>
+            <h4 class="card-text text-center">Blockchain and Distributed Systems Security Lab hosts many activities such as
+                projects, consultancy, webinars etc. The focus of the lab is to conduct the activities
+                related to distributed system, security and blockchain. Blockchain is emerging technology
+                and used widely in banking, healthcare and government sectors."</h4>
+
+        </div>
         <br>
-        <h3 style="text-align: center; font-family: 'Black Han Sans';" class="display-6">List of Software Available in Lab</h3>
+    </div>
+    <br>
+    <br>
+
+    <section class="deal-of-week set-bg spad" data-setbg="img/bd3.png">
+        <div class="container">
+            <div class="col-lg-6">
+                <div class="section-title">
+
+                    <h2 style="font-size: 25px;">Aims and Objective of BDSL</h2>
+                    <div class="text">
+                       <p> 1. To create an environment and raise awareness among developers and society by
+                        educating them in the Blockchain and Distributed system technology.<br>
+                        2. To identify and explore the use cases of the blockchain technology<br>
+                        3. To design and development of applications using blockchain technology<br>
+                        4. To identify the research issues and gaps in blockchain infrastructure and providing the<br>
+                        solutions.<br>
+                        5. To carry out industry sponsored projects<br>
+                        6. To take consultancy projects,<br>
+                        7. To carry product development activities,<br>
+                        8. To conduct faculty development programs<br>
+                        9. To give opportunity to students for internships,<br>
+                        10. To collaborate with national and international partners<br>
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Activities Conducted</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-blog">
+                        <img src="img/i3.png" alt="">
+                        <div class="latest-text">
+                            <div class="tag-list">
+                                <div class="tag-item">
+                                    <i  class="fa fa-calendar-o"></i>
+                                    13th October, 2017
+                                </div>
+
+                            </div>
+                            <a href="#">
+                                <h4>Seminar</h4>
+                            </a>
+                            <p>Expert Talk on Blockchain by Mr Hideki Shoda of Chaintope, Japan and Anandsagar Shiralkar, CEO Vizitech,UG and Research scholars meeting with
+                                Mr Hideki Shoda of Chaintope, Japan and Anandsagar Shiralkar, CEO Vizitech </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-blog">
+                        <img src="img/i2.png" alt="">
+                        <div class="latest-text">
+                            <div class="tag-list">
+                                <div class="tag-item">
+                                    <i class="fa fa-calendar-o"></i>
+                                    14 December 2018
+                                </div>
+
+                            </div>
+                            <a href="#">
+                                <h4>Expert Session</h4>
+                            </a>
+                            <p>Expert session on Blockchain technology conducted on 14 December, 2018 by Dr. Vidyasagar Potdar, Senior Research Fellow,
+                                Information security and Blockchain consultant, Curtin University, Perth, Australia </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-latest-blog">
+                        <img src="img/i1.png" alt="">
+                        <div class="latest-text">
+                            <div class="tag-list">
+                                <div class="tag-item">
+                                    <i class="fa fa-calendar-o"></i>
+                                    Year 2018
+                                </div>
+
+                            </div>
+                            <a href="#">
+                                <h4>Meeting with UG/phd Scholars</h4>
+                            </a>
+                            <p>Meeting with UG, Ph.D. scholars with Dr. Vidyasagar Potdar, Senior Research Fellow,
+                                Information security and Blockchain consultant, Curtin University, Perth, Australia </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <div id="csec" class="card">
+        <br>
+        <br>
+        <div class="section-title">
+            <h2 style="font-size: 25px;">Facilities Available in the Lab</h2>
+        </div>
         <div class="card-body">
             Blender,
             Kepler, Oxigen, Eclipse,
@@ -284,12 +258,17 @@ margin-top: 10px" width="500" height="400" >
             Android Studio,
             Remix ethereum ID,
             Truffle suit for smart contracts,
+            <br>
         </div>
+        <br>
     </div>
     <br>
-    <h2 id="member" style="font-family: 'Coda Caption'; font-size: 25px;">Group members & profiles of core group members</h2>
     <br>
-    <table class="table table-bordered w3-teal">
+    <br>
+    <div class="section-title">
+        <h2 style="font-size: 25px;">Group Members </h2>
+    </div>    <br>
+    <table  class="table-responsive table table-bordered">
 
         <thead>
         <tr>
@@ -308,7 +287,6 @@ margin-top: 10px" width="500" height="400" >
             <td>Head </td>
             <td>9822457390 </td>
             <td>rbingle@pict.edu</td>
-
         </tr>
         <tr>
             <th scope="row">2</th>
@@ -316,7 +294,6 @@ margin-top: 10px" width="500" height="400" >
             <td>Member </td>
             <td>9970679879 </td>
             <td>arbuchade@pict.edu </td>
-
         </tr>
         <tr>
             <th scope="row">2</th>
@@ -335,10 +312,13 @@ margin-top: 10px" width="500" height="400" >
 
         </tbody>
     </table>
-
-    <h2 id="project" style="font-family: 'Coda Caption'; font-size: 25px;" >Projects under BDSL</h2>
-
-    <table class="table table-bordered w3-teal">
+    
+    <br>
+    <br>
+    <div class="section-title">
+        <h2 style="font-size: 25px;">Projects Under BDSL </h2>
+    </div>
+    <table id="csec" class="table-responsive table table-bordered w3-teal">
 
         <thead>
         <tr>
@@ -371,7 +351,7 @@ margin-top: 10px" width="500" height="400" >
         </tbody>
     </table>
 
-    <table class="table table-bordered bg-white">
+    <table id="csec1" class="table  table-bordered bg-white">
 
         <thead>
         <tr>
@@ -421,10 +401,14 @@ margin-top: 10px" width="500" height="400" >
         </tbody>
     </table>
 
-<br>
-    <div class="card">
+    <br>
+    <br>
+    <br>
+    <div id="csec" class="card">
         <br>
-        <h3 style="text-align: center; font-family: 'Black Han Sans';" class="display-6">Consultancy</h3>
+        <div class="section-title">
+            <h2 style="font-size: 25px;">Consultancy </h2>
+        </div>
         <div class="card-body">
             <table class="table">
                 <thead>
@@ -459,11 +443,14 @@ margin-top: 10px" width="500" height="400" >
             </table>
         </div>
     </div>
-
-    <div class="card">
+    <br>
+    <br>
+    <div id="csec" class="card">
         <div class="card-body">
 
-            <h3 style="text-align: center; font-family: 'Black Han Sans';" class="display-6">collaboration and partnership with with other institutions/agencies/organizations</h3>
+            <div class="section-title">
+                <h2 style="font-size: 25px;">Professional Tie ups </h2>
+            </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">BigOData LLC USA
                 </li>
@@ -473,9 +460,12 @@ margin-top: 10px" width="500" height="400" >
         </div>
     </div>
     <br>
-    <h2 style="font-family: 'Coda Caption'; font-size: 25px;" >Patents</h2>
-
-    <table class="table table-bordered w3-teal">
+    <br>
+    <br>
+    <div class="section-title">
+        <h2 style="font-size: 25px;">Patents </h2>
+    </div>
+    <table id="csec" class="table-responsive table table-bordered w3-teal">
 
         <thead>
         <tr>
@@ -517,10 +507,13 @@ margin-top: 10px" width="500" height="400" >
 
         </tbody>
     </table>
-<br>
-    <h2 style="font-family: 'Coda Caption'; font-size: 25px;" >Awards and Achievements </h2>
-
-    <ul class="list-group " >
+    <br>
+    <br>
+    <br>
+    <div class="section-title">
+        <h2 style="font-size: 25px;">Awards and Achievement </h2>
+    </div>
+    <ul id="csec" class="list-group " >
         <li class="list-group-item">1. Dr. Rajesh Ingle completed the “Blockchain basics” and “Smart contracts” an online
             non-credit course authorized by University at Buffalo and state university of New
             York and offered through Coursera</li>
@@ -538,42 +531,35 @@ margin-top: 10px" width="500" height="400" >
         </li>
 
     </ul>
-<br>
-    <footer class="section footer-classic context-dark bg-image" style="background: white;">
-        <div class="container">
-            <div class="row row-30">
-                <div class="col-md-4 col-xl-5">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7569.37861620186!2d73.84599002467772!3d18.452410549794774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d18.4472792!2d73.8490738!4m5!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2spict%20robotics!3m2!1d18.457542099999998!2d73.8508336!5e0!3m2!1sen!2sin!4v1598365285906!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contacts</h5>
-                    <dl class="contact-list">
-                        <dt style="color: black">Address:</dt>
-                        <dd style="color: black"> Survey No. 27, Near, Trimurti Chowk, Bharati Vidyapeeth Campus, Dhankawadi, Pune, Maharashtra 411043</dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt style="color: black">email:</dt>
-                        <dd style="color: black"><a href="mailto:#">arbuchade@pict.edu</a></dd>
-                    </dl>
-                    <dl class="contact-list">
-                        <dt style="color: black">phones:</dt>
-                        <dd style="color: black"><a href="tel:#"> Dr.Rajesh Ingle:- 9822457390</a>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="col-md-4 col-xl-3">
-                    <h5>Links</h5>
-                    <ul class="nav-list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#act">Activities</a></li>
-                        <li><a href="#member">Memebers</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </footer>
 
+    <br>
+    <br>
+
+
+
+
+
+
+    <!-- Latest Blog Section End -->
+
+<div style="width: 100%; height: 35px; background-color: black;" >
+    <p style="margin: auto; color: white;text-align: center;">All rights Reserved @ BDSL | made by <a target="_blank" href="https://www.linkedin.com/in/tejas-shirnalkar-98a246172/">Tejas Shirnalkar</a></p>
+</div>
+
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery.dd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
